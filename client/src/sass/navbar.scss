@@ -1,0 +1,194 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color:white ;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.07);
+    .nav-card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        .nav-left{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .logo{
+                img{
+                    width: 8rem;
+                    object-fit: cover;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        transform: scale(1.1) translateY(-2px);
+                    }
+                }
+            }
+            span{
+                cursor: pointer;
+            }
+        }
+        .nav-right{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            transition: all .3s ease-in-out;
+            .links{
+                display: flex;
+                gap: 2rem;
+                a{
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        color: #7b00ff;
+                    }
+                }
+            }
+            .userInfo{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                span{}
+                img{
+                    width:25px;
+                    height:25px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+            .login{
+                a{
+                    outline: 1px solid rgba(94, 45, 191, 0.785);
+                    padding: 0.4rem 1.2rem;
+                    border-radius: 999px;
+                    color: rgb(140, 46, 207);
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        background-color: rgba(136, 38, 206, 0.826);
+                        color: white;
+                    }
+                }
+            }
+            .menu-icon{
+                display: none;
+            }
+
+        }
+    }
+}
+
+.sidebar-hidden{
+    position: fixed;
+    top: 0;
+    right: -15rem;
+    transition: all .3s ease-in-out;
+    border-radius: 100% 0% 0% 100% ; 
+
+    .menu{
+        padding: 5rem;
+      
+        .close{
+            display: none;
+        }
+        .menu-links{
+            display: flex;
+            flex-direction: column ;
+            gap: 5rem;
+            font-size: 1.5rem;
+            justify-content: center;
+            height: 100vh;
+            a{
+
+                color: white;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transition: all .3s ease-in-out;
+    background-color: rgba(128, 0, 255, 0.814);
+    border-radius: 0; 
+    .menu{
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+
+        .close{
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .menu-links{
+            display: flex;
+            flex-direction: column ;
+            font-size: 1.5rem;
+            gap: 4rem;
+            justify-content: center;
+            height: calc(100vh - 70px);
+            
+                .userInfo{
+                    display: block !important;
+                    color: rgb(255, 255, 255);
+                    cursor: pointer;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+            
+            a{
+                color: white;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: rgb(107, 0, 102);
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+ 
+}
+.active{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 678px) {
+   .nav-card{
+    .nav-right{
+        .links{
+            a{
+                display: none;
+            };
+        }
+      
+        .login{
+            display: none;
+        }
+        .menu-icon{
+            display: block !important;
+            cursor: pointer;
+        }
+        .close{
+            text-align: right;
+        }
+        .userInfo{
+            display: none !important;
+        }
+    }
+   }
+    .sidebar{
+        display: block;
+    
+    }
+    
+}

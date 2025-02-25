@@ -1,0 +1,144 @@
+.register-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  min-height: calc(100vh - 100px);
+  background: url("../img//bg-image2.png");
+
+  .register-card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: auto;
+    min-height: 35rem;
+    background-color: white;
+    color: rgb(78, 0, 166);
+    border-radius: 5px;
+    animation: fadeIn 0.7s ease-in-out;
+
+    .register-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5rem;
+      padding: 1rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          input {
+            padding: 0.7rem 1rem;
+            border: 1px solid rgb(227, 227, 227);
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            &:focus {
+              outline: none;
+            }
+          }
+          .upload-img {
+            input {
+              border: none;
+              &::-webkit-file-upload-button {
+                padding: 0.5rem 1rem;
+                border-radius: 999px;
+                border: none;
+                background-color: #7b00ff7d;
+                color: white;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  background-color: #7b00ff;
+                }
+              }
+            }
+          }
+          small {
+            color: rgb(255, 55, 55);
+            width: max-content;
+          }
+        }
+        button {
+          padding: 0.5rem 1rem;
+          border-radius: 3px;
+          border: 1px solid #7b00ff;
+          color: #7b00ff;
+          background-color: transparent;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: #7b00ff;
+            color: white;
+          }
+          &:disabled {
+            cursor: not-allowed;
+          }
+        }
+        span {
+          text-align: center;
+          color: grey;
+        }
+        .other {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          button {
+            border-radius: 999px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .register-right {
+      flex: 1;
+      background: url("../img/login.png") center no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      span {
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .register-main {
+    height: calc(100vh - 100px);
+    .register-card {
+      min-width: 95%;
+      display: flex;
+      flex-direction: column;
+      .register-left {
+        flex: 1;
+      }
+      .register-right {
+        span {
+          padding-block: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(30%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
