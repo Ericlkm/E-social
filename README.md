@@ -76,14 +76,9 @@ Here you can list the main routes of your API, and what are their expected reque
 | <kbd>POST /authenticate</kbd>     | authenticate user into the api see [request details](#post-auth-detail)
 
 
-<h3 id="post-auth-detail">POST /authenticate</h3>
-
 
  
-<h2 id="colab">🤝 Collaborators</h2>
 
-<p>Special thank you for all people that contributed for this project.</p>
-<table>
 <tr>
 
 <td align="center">
