@@ -1,6 +1,6 @@
-# E-social
+
                      
-<h1 align="center" style="font-weight: bold;">Project name 💻</h1>
+<h1 align="center" style="font-weight: bold;">E-Social 💻</h1>
 
 <p align="center">
 <a href="#tech">Technologies</a>
@@ -11,18 +11,23 @@
 </p>
 
 
-<p align="center">Simple description of what your project do or how to use it</p>
+<p align="center">**E-Social** is an online platform designed to foster social interaction and community building. It allows users to create profiles, connect with friends, share posts, photos, and updates, and interact through comments, likes, and direct messaging. E-Social provides a safe and engaging environment where users can engage with a variety of content—whether personal updates, creative work, or professional achievements. Its seamless interface, powered by React, ensures smooth navigation across the site, while secure authentication processes, such as **JWT** and **bcrypt**, protect user data and privacy. The platform is ideal for individuals looking to stay connected with friends and family, share moments, or even expand their professional networks. Whether you're sharing a personal milestone or following a community of like-minded people, E-Social acts as a space for meaningful social engagement and content sharing, all with a focus on user safety and ease of use.</p>
 
 
 <p align="center">
-<a href="https://github.com/ShaanCoding">📱 Visit this Project</a>
+<a href="https://github.com/ericlkm">📱 Visit website (coming soon)</a>
 </p>
  
 <h2 id="technologies">💻 Technologies</h2>
 
 - list of all technologies you used
 - react
-- styled components
+- Node.js
+- Sass
+- MySQL
+- JWT
+- bcrypt
+- @tanstack/react-query
 - another example
  
 <h2 id="started">🚀 Getting started</h2>
@@ -33,7 +38,8 @@ Here you describe how to run your project locally
 
 Here you list all prerequisites necessary for running your project. For example:
 
-- [NodeJS](https://github.com/)
+- [NodeJS](https://nodejs.org/en/download)
+- [vscode](https://code.visualstudio.com/download)
 - [Git 2](https://github.com)
  
 <h3>Cloning</h3>
@@ -48,19 +54,16 @@ git clone your-project-url-in-github
 
 Use the `.env.example` as reference to create your configuration file `.env` with your AWS Credentials
 
-```yaml
-NODE_AWS_REGION=us-east-1
-NODE_AWS_KEY_ID={YOUR_AWS_KEY_ID}
-NODE_AWS_SECRET={YOUR_AWS_SECRET}
-```
- 
+
 <h3>Starting</h3>
 
 How to start your project
 
 ```bash
-cd project-name
-npm some-command-to-run
+cd E-social
+npm i 
+cd server then nodemon server.js
+cd client then cd src then npm run dev
 ```
  
 <h2 id="routes">📍 API Endpoints</h2>
@@ -72,33 +75,10 @@ Here you can list the main routes of your API, and what are their expected reque
 | <kbd>GET /authenticate</kbd>     | retrieves user info see [response details](#get-auth-detail)
 | <kbd>POST /authenticate</kbd>     | authenticate user into the api see [request details](#post-auth-detail)
 
-<h3 id="get-auth-detail">GET /authenticate</h3>
-
-**RESPONSE**
-```json
-{
-  "name": "Fernanda Kipper",
-  "age": 20,
-  "email": "her-email@gmail.com"
-}
-```
 
 <h3 id="post-auth-detail">POST /authenticate</h3>
 
-**REQUEST**
-```json
-{
-  "username": "fernandakipper",
-  "password": "4444444"
-}
-```
 
-**RESPONSE**
-```json
-{
-  "token": "OwoMRHsaQwyAgVoc3OXmL1JhMVUYXGGBbCTK0GBgiYitwQwjf0gVoBmkbuyy0pSi"
-}
-```
  
 <h2 id="colab">🤝 Collaborators</h2>
 
@@ -107,24 +87,12 @@ Here you can list the main routes of your API, and what are their expected reque
 <tr>
 
 <td align="center">
-<a href="https://github.com/Fernanda-Kipper">
-<img src="https://avatars.githubusercontent.com/u/61896274?v=4" width="100px;" alt="Fernanda Kipper Profile Picture"/><br>
+<a href="https://github.com/ericlkm">
 <sub>
-<b>Fernanda Kipper</b>
+<b>Eric</b>
 </sub>
 </a>
 </td>
-
-<td align="center">
-<a href="https://github.com/ShaanCoding">
-<img src="https://avatars.githubusercontent.com/u/22236218?v=4" width="100px;" alt="Shaan Khan Profile Picture"/><br>
-<sub>
-<b>Shaan Khan</b>
-</sub>
-</a>
-</td>
-
-</tr>
 </table>
  
 <h2 id="contribute">📫 Contribute</h2>
