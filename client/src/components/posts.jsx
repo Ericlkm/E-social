@@ -37,6 +37,7 @@ export default function Posts({ post }) {
         return data;
       } catch (err) {
         console.log(err);
+        console.log(error);
       }
     },
   });
