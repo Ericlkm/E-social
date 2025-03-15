@@ -95,6 +95,20 @@ export default function Center() {
   return (
     <>
       <div className="center">
+        <div className="stories">
+          <div className="story">
+            <img src={"/uploads/" + user.avatar} alt="" />
+          </div>
+          <div className="story">
+            <img src={"/uploads/" + user.avatar} alt="" />
+          </div>
+          <div className="story">
+            <img src={"/uploads/" + user.avatar} alt="" />
+          </div>
+          <div className="story">
+            <img src={"/uploads/" + user.avatar} alt="" />
+          </div>
+        </div>
         <div className="create-post">
           <div className="create-post-card">
             <div className="preview">

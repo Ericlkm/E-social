@@ -6,6 +6,18 @@
   background-color: rgba(65, 0, 95, 0.137);
   padding: 2rem;
   min-height: 100vh;
+  .stories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .story {
+      img {
+        width: 200px;
+        border-radius: 5px;
+      }
+    }
+  }
   .create-post {
     .create-post-card {
       background-color: #fff;

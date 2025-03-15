@@ -126,11 +126,14 @@ export function Navbar() {
                     </Dropdown>
                   </div>
                 ) : null}
+                <Link to="/login">Login</Link>
                 {links.map((link, index) => {
                   return (
-                    <Link to={link.uri} key={index}>
-                      {link.label}
-                    </Link>
+                    <>
+                      <Link to={link.uri} key={index}>
+                        {link.label}
+                      </Link>
+                    </>
                   );
                 })}
               </div>

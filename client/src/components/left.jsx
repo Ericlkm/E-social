@@ -2,6 +2,10 @@ import "../sass/Lmenu.scss";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../utils/authContext";
+import { ImImages } from "react-icons/im";
+import { SlPeople } from "react-icons/sl";
+import { CiVideoOn } from "react-icons/ci";
+
 export default function Left() {
   const { user } = useContext(AuthContext);
 
@@ -14,37 +18,43 @@ export default function Left() {
             <Link to="/me">{user.username}</Link>
           </div>
           <div className="menu">
-            <h3>something</h3>
+            <h3>Feed</h3>
             <div className="items">
               <div className="item">
-                <span></span>
-                <span>mfvnkjrnv</span>
+                <span>
+                  <SlPeople />
+                </span>
+                <span>Friends</span>
               </div>
               <div className="item">
-                <span></span>
-                <span>mfvnkjrnv</span>
+                <span>
+                  <ImImages />
+                </span>
+                <span>Photos</span>
               </div>
               <div className="item">
-                <span></span>
-                <span>mfvnkjrnv</span>
+                <span>
+                  <CiVideoOn />
+                </span>
+                <span>Watch Videos</span>
               </div>
             </div>
           </div>
           <hr />
           <div className="menu">
-            <h3>something</h3>
+            <h3>Recents</h3>
             <div className="items">
               <div className="item">
                 <span></span>
-                <span>mfvnkjrnv</span>
+                <span>Likes</span>
               </div>
               <div className="item">
                 <span></span>
-                <span>mfvnkjrnv</span>
+                <span>Videos</span>
               </div>
               <div className="item">
                 <span></span>
-                <span>mfvnkjrnv</span>
+                <span>Posts</span>
               </div>
             </div>
           </div>
